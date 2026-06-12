@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700;800&display=swap');
+
+/* ── Page ── */
+.landingPage {
+    min-height: 100vh;
+    background: #0a0a0f;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    font-family: 'DM Sans', 'Segoe UI', sans-serif;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Background ── */
+.landingGrid {
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.landingGlowGreen {
+    position: fixed;
+    width: 700px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(29,158,117,0.10) 0%, transparent 70%);
+    top: 10%;
+    left: -150px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.landingGlowBlue {
+    position: fixed;
+    width: 500px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(30,80,200,0.07) 0%, transparent 70%);
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ── Navbar ── */
+.landingNav {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.landingNavLogo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.landingNavMark {
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    background: #1D9E75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingNavBrand {
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.landingNavBrand span {
+    color: #1D9E75;
+}
+
+.landingNavLinks {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.landingNavBtn {
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.55);
+    font-size: 13px;
+    font-family: inherit;
+    padding: 7px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: color 0.2s, background 0.2s;
+}
+
+.landingNavBtn:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.06);
+}
+
+.landingNavBtnOutline {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    color: rgba(255,255,255,0.7);
+    padding: 7px 16px;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+
+.landingNavBtnOutline:hover {
+    color: #fff;
+    border-color: rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.08);
+}
+
+/* ── Hero ── */
+.landingHero {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 3rem 4rem;      
+    gap: 4rem;                
+    max-width: 1200px;     
+    margin: 0 auto;           
+    width: 100%; 
+} 
+
+.landingHeroLeft {
+    flex: 1;
+    max-width: 520px;
+}
+
+.landingHeroRight {
+    flex: 1;
+    max-width: 540px;
+}
+
+/* ── Badge ── */
+.landingBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(29,158,117,0.1);
+    border: 1px solid rgba(29,158,117,0.25);
+    border-radius: 100px;
+    padding: 4px 14px;
+    font-size: 12px;
+    color: #1D9E75;
+    margin-bottom: 1.5rem;
+}
+
+.landingBadgeDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1D9E75;
+    animation: landingPulse 2s infinite;
+}
+
+@keyframes landingPulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.3; }
+}
+
+/* ── Heading ── */
+.landingH1 {
+    font-size: 52px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin: 0 0 1rem;
+}
+
+.landingAccent {
+    color: #1D9E75;
+}
+
+.landingSubtext {
+    font-size: 15px;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.7;
+    margin: 0 0 2.5rem;
+    font-weight: 300;
+    max-width: 380px;
+}
+
+/* ── Buttons ── */
+.landingBtnRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.landingBtnMain {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #1D9E75;
+    color: #fff;
+    border: none;
+    border-radius: 11px;
+    height: 50px;
+    padding: 0 26px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.landingBtnMain:hover {
+    background: #0F6E56;
+}
+
+.landingBtnMain:active {
+    transform: scale(0.97);
+}
+
+.landingBtnGhost {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 11px;
+    height: 50px;
+    padding: 0 22px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.landingBtnGhost:hover {
+    color: #fff;
+    border-color: rgba(255,255,255,0.25);
+    background: rgba(255,255,255,0.04);
+}
+
+/* ── Mock screen ── */
+.landingMock {
+    background: #111118;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.08);
+    overflow: hidden;
+}
+
+.landingMockBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.landingMockBarLeft {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.landingLiveDot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #1D9E75;
+    animation: landingPulse 2s infinite;
+}
+
+.landingMockTitle {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+}
+
+.landingMockTime {
+    font-size: 11px;
+    color: rgba(255,255,255,0.3);
+}
+
+.landingMockBarRight {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.landingMockBarIcon {
+    font-size: 11px;
+    color: rgba(255,255,255,0.3);
+}
+
+.landingMockGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    padding: 8px;
+}
+
+.landingTile {
+    background: #1a1a24;
+    border-radius: 10px;
+    aspect-ratio: 16/9;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 8px;
+    border: 1px solid rgba(255,255,255,0.05);
+    overflow: hidden;
+}
+
+.landingTileIcon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingTileLabel {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(0,0,0,0.55);
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+
+.landingTileDot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.landingTileName {
+    font-size: 10px;
+    color: rgba(255,255,255,0.75);
+}
+
+.landingMockControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.landingCtrl {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.07);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.landingCtrl:hover {
+    background: rgba(255,255,255,0.14);
+}
+
+.landingCtrlEnd {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #E24B4A;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.landingCtrlEnd:hover {
+    background: #c73a39;
+}
+
+/* ── Stats ── */
+.landingStats {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center; 
+    gap: 2rem;
+    padding: 1.5rem 2rem 3rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.landingStatNum {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 2px;
+}
+
+.landingStatLabel {
+    font-size: 12px;
+    color: rgba(255,255,255,0.28);
+    margin: 0;
+}
+
+.landingStatDivider {
+    width: 1px;
+    background: rgba(255,255,255,0.07);
+    align-self: stretch;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .landingHero {
+        flex-direction: column;
+        padding: 2rem 1.25rem;
+    }
+
+    .landingHeroRight {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .landingH1 {
+        font-size: 36px;
+    }
+
+    .landingStats {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+.landingHeroImg {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 60px rgba(29,158,117,0.15));
+}
