@@ -214,4 +214,4 @@ MONGO_URI=your_mongodb_connection_string
 
 ## Author
 
-Built by **Mr-A** — [GitHub](https://github.com/yourusername)
+Built by **Jiya Singh** — [GitHub](https://github.com/jiya2401)
