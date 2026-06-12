@@ -1,7 +1,6 @@
 # RoomSync
 
 > Drop in and sync up. A real-time video conferencing app built with React, Node.js, WebRTC and Socket.IO.
----
 
 ## App Flow
 
