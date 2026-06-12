@@ -101,7 +101,7 @@ RoomSync/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/RoomSync.git
+git clone https://github.com/jiya2401/RoomSync.git
 cd RoomSync
 ```
 
